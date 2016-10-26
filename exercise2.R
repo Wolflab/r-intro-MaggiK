@@ -54,6 +54,9 @@ pop_plot(5, y)
 pop_plot=function(t,y){
 plot(t, y, xlab= "Time", ylab="Population Growth", col=ifelse(a<y, "blue", ifelse(y>b, "red", "black")))
 }
+
+#Maggi: Did yo figure out how to plot  line? Just testing to see if I can comment and edit
+  
 #8. You are beginning to suspect the biologist is taking advantage of you. Modify your function to plot in purple any y value that’s above a and b. Hint: try putting 3==3 & 2==2 and 3==4 | 2==2 into an if statement and see what you get. Using this construction may make this simpler.
 pop_plot=function(t,y){
   plot(t, y, xlab= "Time", ylab="Population Growth", col=ifelse(y>a & y>b , "purple", "black"))
